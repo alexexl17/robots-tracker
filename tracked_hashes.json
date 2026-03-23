@@ -6,5 +6,9 @@
   "https://ya.ua/robots.txt": {
     "hash": "ad6ca4ec259a0b6ea82ff2b4369c0435",
     "content": "User-agent: *\nAllow: /\n\nDisallow: /blog/\n\nDisallow: /checkout/\nDisallow: /payment-failed/\nDisallow: /thank-you/\nDisallow: /user/\n\nDisallow: /?\nDisallow: *?s=\nDisallow: *&s=\nDisallow: */embed$\nDisallow: *utm*=\n\nDisallow: *?sort=\nDisallow: *&sort=\n\nDisallow: *gclid=\nDisallow: *fbclid=\n\nDisallow: *_*_*_\n\nDisallow: *%2B\nDisallow: *+\n\nSitemap: https://ya.ua/sitemap.xml"
+  },
+  "https://ntz.com.ua/robots.txt": {
+    "hash": "23adfe2767bbccd223658ab972d8d794",
+    "content": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://ntz.com.ua/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
   }
 }
