@@ -4,6 +4,7 @@ import requests
 import json
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 URLS = [
     "https://yabloki.ua/robots.txt",
@@ -13,6 +14,7 @@ TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID   = os.environ["TELEGRAM_CHAT_ID"]
 
 CACHE_FILE = Path("tracked_hashes.json")
+TZ = ZoneInfo("Europe/Kiev")
 
 
 def send_telegram(message: str):
@@ -41,7 +43,8 @@ def save_cache(cache: dict):
 
 def fetch(url: str) -> str | None:
     try:
-        resp = requests.get(url, timeout=15)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+        resp = requests.get(url, timeout=15, headers=headers)
         resp.raise_for_status()
         return resp.text
     except Exception as e:
@@ -63,7 +66,7 @@ def diff_lines(old: str, new: str) -> str:
 
 def main():
     cache = load_cache()
-    now = datetime.now().strftime("%d.%m.%Y %H:%M")
+    now = datetime.now(tz=TZ).strftime("%d.%m.%Y %H:%M")
 
     for url in URLS:
         content = fetch(url)
