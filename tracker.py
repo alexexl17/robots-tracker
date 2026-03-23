@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 URLS = [
     "https://yabloki.ua/robots.txt",
     "https://ya.ua/robots.txt",
+    "https://ntz.com.ua/robots.txt",
 ]
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
