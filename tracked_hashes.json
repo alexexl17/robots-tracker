@@ -8,7 +8,7 @@
     "content": "User-agent: *\nAllow: /\n\nDisallow: /blog/\n\nDisallow: /checkout/\nDisallow: /payment-failed/\nDisallow: /thank-you/\nDisallow: /user/\n\nDisallow: /?\nDisallow: *?s=\nDisallow: *&s=\nDisallow: */embed$\nDisallow: *utm*=\n\nDisallow: *?sort=\nDisallow: *&sort=\n\nDisallow: *gclid=\nDisallow: *fbclid=\n\nDisallow: *_*_*_\n\nDisallow: *%2B\nDisallow: *+\n\nSitemap: https://ya.ua/sitemap.xml"
   },
   "https://ntz.com.ua/robots.txt": {
-    "hash": "b021765dc48b0cf573875d8f83fff649",
-    "content": "# START YOAST BLOCK\r\n# ---------------------------\r\nUser-agent: *\r\nDisallow:\r\nDisallow: https://ntz.com.ua/yak-vstanoviti-vajber-telefoni/\r\n\r\nSitemap: https://ntz.com.ua/sitemap_index.xml\r\n# ---------------------------\r\n# END YOAST BLOCK"
+    "hash": "f9f5b3c951f1f001224df3ace80e38b5",
+    "content": "# START YOAST BLOCK\r\n# ---------------------------\r\nUser-agent: *\r\nDisallow:\r\n\r\nSitemap: https://ntz.com.ua/sitemap_index.xml\r\n# ---------------------------\r\n# END YOAST BLOCK"
   }
 }
