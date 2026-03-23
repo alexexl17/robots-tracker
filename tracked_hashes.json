@@ -1,1 +1,6 @@
-{}
+{
+  "https://yabloki.ua/robots.txt": {
+    "hash": "3e75b2b46d5337d13d1dbba2f56eab48",
+    "content": "# www.robotstxt.org/\n# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449\n\nUser-agent: *\n\nDisallow: */utm_source*\nDisallow: */utm_medium*\nDisallow: */utm_campaign*\nDisallow: */utm_content*\nDisallow: */utm_term*\nDisallow: *gclid=*\n\nUser-agent: Googlebot\nDisallow:\nUser-agent: Googlebot-image\nDisallow:\n\nsitemap: https://yabloki.ua/sitemap_index.xml"
+  }
+}
